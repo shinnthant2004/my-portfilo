@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<div class="loader-screen">
+    <div class="loader">Loading...</div>
+</div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Profile Website</title>
+    <style>
+        .loader,
+        .loader:before,
+        .loader:after {
+            background: #ffffff;
+            -webkit-animation: load1 1s infinite ease-in-out;
+            animation: load1 1s infinite ease-in-out;
+            width: 1em;
+            height: 4em;
+        }
+        .loader-screen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 2000;
+            background-color: white;
+        }
+        .loader {
+            color: #be4edd;
+            text-indent: -9999em;
+            margin: 88px auto;
+            position: relative;
+            font-size: 11px;
+            -webkit-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+        .loader:before,
+        .loader:after {
+            position: absolute;
+            top: 0;
+            content: '';
+        }
+        .loader:before {
+            left: -1.5em;
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+        .loader:after {
+            left: 1.5em;
+        }
+        @-webkit-keyframes load1 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 0;
+                height: 4em;
+            }
+            40% {
+                box-shadow: 0 -2em;
+                height: 5em;
+            }
+        }
+        @keyframes load1 {
+            0%,
+            80%,
+            100% {
+                box-shadow: 0 0;
+                height: 4em;
+            }
+            40% {
+                box-shadow: 0 -2em;
+                height: 5em;
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="css/nightmode.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="vendor/WOW-master/css/libs/animate.css">
+</head>
+<body class="">
+
+<header class="container-fluid site-nav">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container">
+                                <a class="navbar-brand" href="#">
+                                    <img src="images/boy.png" class="logo">
+                                    <small class="fw-bold ms-2" style="color: black">Shinn Thant</small>
+                                </a>
+
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars fa-2x menu-icon"></i>
+                                </button>
+
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto  mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#skill">Skills</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#projects">Projects</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact Me</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="home" class="container-fluid">
+   <div class="row">
+       <div class="container">
+           <div class="row min-vh-100 align-items-center justify-content-center">
+               <div class="col-12 col-md-6 d-flex justify-content-center">
+                   <div class="mt-sm-5">
+                       <p class="text-black-50 text-night mt-4 mt-md-0 animate__animated animate__backInDown">Welcome To My World,</p>
+
+                       <p class="text-black text-night fw-bold fs-4 m-0 animate__animated animate__rotateInDownRight ani-delay-2">Front-End Web Developer</p>
+
+                       <div class="wrapper">
+                           <div class="static-text text-night animate__animated animate__fadeIn ani-delay-4">I'm</div>
+                           <ul class="dynamic-text">
+                               <li><span class="animate__animated animate__fadeIn ani-delay-4">Shinn Thant</span></li>
+                           </ul>
+                       </div>
+
+                      <p style="width: 300px" class="text-center text-black-50 text-night animate__animated animate__rollIn ani-delay-3">I learned Web Development from <span style="color:#be4edd">MMSIT Special WebDesign Course</span>for 4months.</p>
+
+                       <button class="btn home-btn animate__animated animate__fadeInLeft ani-delay-5" style="background-color:#be4edd"><a href="#contact" style="text-decoration: none;color: white">Contact Me</a></button>
+
+                   </div>
+               </div>
+               <div class="col-12 col-md-6 col-sm-4 animate__animated animate__slideInRight ani-delay-4">
+                   <div class="text-center" style="">
+                       <img src="images/home-bg.svg" class="me">
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="side-icons animate__animated animate__rotateInUpLeft ani-delay-6 row">
+           <i class="feather-facebook side-icon mb-3  text-black-50"  style="font-size: 22px;"></i>
+           <i class="feather-instagram side-icon mb-3 fw-bold  text-black-50"  style="font-size: 18px;"></i>
+           <i class="feather-twitter side-icon mb-3 fw-bold text-black-50"  style="font-size: 18px;"></i>
+           <i class="feather-chrome side-icon mb-3 fw-bold text-black-50"  style="font-size: 18px;"></i>
+       </div>
+       <div class="mode animate__animated animate__fadeIn ani-delay-3">
+           <div class="mode-icon" onclick="change()">
+               <i class="fas fa-moon change-icon text-black" id="sun-icon"></i>
+           </div>
+       </div>
+       <div class="mouse-con animate__animated animate__fadeIn ani-delay-3">
+           <div class="mouse-row">
+               <a href="#about"><i class="fas fa-mouse mouse-icon"></i></a>
+           </div>
+       </div>
+       <div class="stick animate__animated animate__fadeIn ani-delay-3">
+           <div class="stick-con">
+               <a href="#home"><i class="fas fa-arrow-up stick-icon animated bounce" style="animation-iteration-count: infinite"></i></a>
+           </div>
+       </div>
+   </div>
+</section>
+<section id="about" class="container-fluid about">
+    <div class="row">
+       <div class="col-12">
+           <div class="container">
+               <div class="row min-vh-100 justify-content-center align-items-center">
+                   <div class="col-12 col-md-6">
+                       <div class="">
+                           <img src="images/new-about.svg" class="about-img wow bounceInLeft">
+                       </div>
+                   </div>
+                   <div class="col-12 col-md-6">
+                       <div class="ms-5 mb-3 mb-md-0">
+                           <p class="text-uppercase fw-bold text-night wow bounceInRight ani-delay-1">About Me</p>
+                           <h2 class="fw-bolder fs-1 text-night wow bounceInRight ani-delay-1">Front-End Web Developer</h2>
+                           <p class="mt-4 text-night wow bounceInRight ani-delay-1">Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven midst their. Beast creepeth. Fish days.</p>
+                           <p class="mt-2 text-night wow bounceInRight ani-delay-1">Is give may shall likeness made yielding spirit a itself together created after sea is in beast beginning signs open god you're gathering whose gathered cattle let. Creature whales fruit unto meat the life beginning all in under give two.</p>
+                           <button class="btn text-white wow rotateInUpRight ani-delay-2" style="background-color: #be4edd">Download CV</button>
+                           <button class="btn btn-light wow rotateInDownRight  ani-delay-2 ms-2 button-2" style="border: 1px solid #be4edd;color: #be4edd">SEE MY WORK</button>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+       </div>
+    </div>
+</section>
+<section id="skill" class="container-fluid skill">
+    <div class="row">
+
+            <div class="container">
+
+                <div class="row min-vh-100">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <small class="text-dark fw-bold d-flex justify-content-center mt-3 mb-0 text-night wow flip ani-delay-1 ">What I am good at,</small>
+                                <h4 class="fw-bold fs-3 text-black text-center mt-3 text-night wow flip ani-delay-1 ">My Skills <i class="fas fa-atom" style=""></i></h4>
+                                <div class="row justify-content-around mt-5">
+
+                                    <div class="text-black-50 border wow fadeInRightBig ani-delay-1 bg-night skill-action shadow rounded-3 p-4 mb-3 mb-md-0" style="width:270px;height: 250px">
+                                     <div class="skill-top-action">
+                                         <i class="feather-layers fa-3x text-warning"></i>
+                                     </div>
+                                        <h5 class="fw-bold text-black mt-2 text-night">WEB DEVELOPING</h5>
+                                        <p class="text-black-50 text-night" style="width: 220px">Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                                    </div>
+
+                                    <div class="text-black-50 border wow fadeInRightBig ani-delay-2 bg-night skill-action shadow rounded-3 p-4 mb-3 mb-md-0" style="width: 270px">
+                                        <div class="skill-top-action">
+                                            <i class="feather-sidebar fa-3x text-info"></i>
+                                        </div>
+                                        <h5 class="fw-bold text-black mt-2 text-night">UI/UX DESIGN</h5>
+                                        <p class="text-black-50 text-night" style="width: 220px">Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                                    </div>
+
+                                    <div class="text-black-50 border wow fadeInRightBig ani-delay-3 bg-night skill-action shadow rounded-3 p-4 mb-3 mb-md-0" style="width: 270px">
+                                        <div class="skill-top-action">
+                                            <i class="feather-edit fa-3x text-danger"></i>
+                                        </div>
+                                        <h5 class="fw-bold text-black mt-2 text-night">WEB DESIGN</h5>
+                                        <p class="text-black-50 text-night" style="width: 220px">Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                                    </div>
+
+                                    <div class="text-black-50 border wow fadeInRightBig ani-delay-4 bg-night skill-action shadow rounded-3 p-4 mb-3 mb-md-0" style="width: 270px">
+                                       <div class="skill-top-action">
+                                           <i class="feather-grid fa-3x" style="color: greenyellow"></i>
+                                       </div>
+                                        <h5 class="fw-bold text-black mt-2 text-night">SEO OPTIMIZE</h5>
+                                        <p class="text-black-50 text-night" style="width: 220px">Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="ms-md-5 ms-2 mt-5">
+                            <div class="d-flex justify-content-between mt-5 ani-delay-1 wow slideInLeft" style="height: 23px">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <i class="fab fa-html5 html"></i>
+                                    <p class="pg-name fw-bold text-primary ms-2 mt-2">HTML</p>
+                                </div>
+                                <p class="pg-percent fw-bold text-primary">90%</p>
+                            </div>
+                            <div class="progress ani-delay-1 wow slideInLeft">
+                                <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+
+                            <div class="d-flex justify-content-between wow slideInLeft ani-delay-2" style="height: 23px">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <i class="fab fa-css3-alt css"></i>
+                                    <p class="pg-name fw-bold ms-2 mt-2" style="color: green">CSS</p>
+                                </div>
+                                <p class="pg-percent fw-bold" style="color: green">80%</p>
+                            </div>
+                            <div class="progress wow slideInLeft ani-delay-2">
+                                <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+
+                            <div class="d-flex justify-content-between wow slideInLeft ani-delay-3" style="height: 23px">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <i class="fab fa-js js"></i>
+                                    <p class="pg-name fw-bold ms-2 mt-2 " style="color:skyblue ">JS</p>
+                                </div>
+                                <p class="pg-percent fw-bold" style="color:skyblue ">70%</p>
+                            </div>
+                            <div class="progress wow slideInLeft ani-delay-3">
+                                <div class="progress-bar progress-bar-animated progress-bar-striped bg-info" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <div class="d-flex justify-content-between wow slideInLeft ani-delay-3-5" style="height: 23px">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <i class="fab fa-js jq"></i>
+                                    <p class="pg-name fw-bold ms-2 mt-2 " style="color:skyblue ">jQuery</p>
+                                </div>
+                                <p class="pg-percent fw-bold text-warning">75%</p>
+                            </div>
+                            <div class="progress wow slideInLeft ani-delay-3-5">
+                                <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <div class="d-flex justify-content-between wow slideInLeft ani-delay-4" style="height: 23px">
+                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                    <i class="fab fa-bootstrap bs text-danger"></i>
+                                    <p class="pg-name fw-bold ms-2 mt-2 text-danger">Bootstrap</p>
+                                </div>
+                                <p class="pg-percent fw-bold text-danger">90%</p>
+                            </div>
+                            <div class="progress wow slideInLeft ani-delay-4">
+                                <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" role="progressbar" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 wow animate__rubberBand ani-delay-3">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-10 col-md-8">
+                                <canvas id="op" width="300" height="300" class="mt-5 me-5 bg-light shadow" style="border-radius: 20%;padding: 7px 0" ></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row skill-media" style="width: 1000px;margin: auto;">
+                            <div class="col-12 col-md-3">
+                                <div class="text-center mt-3">
+                                    <i class="feather-sun" id="custom-icon"></i>
+                                    <div class="mt-2">
+                                        <span class="counter-up fw-bold custom-font text-night">12</span>
+                                        <p class="fw-bold text-black-50 text-night">Years Of Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="col-12 col-md-3">
+                                <div class="text-center mt-3">
+                                    <i class="feather-send" id="custom-icon2"></i>
+                                    <div class="mt-2">
+                                      <span class="fw-bold fs-3 text-night">+</span>  <span class="counter-up fw-bold custom-font text-night">1000</span>
+                                        <p class="fw-bold text-black-50 text-night">Happy Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="col-12 col-md-3">
+                                 <div class="text-center mt-3">
+                                    <i class="feather-sun" id="custom-icon3"></i>
+                                    <div class="mt-2">
+                                        <span class="counter-up fw-bold custom-font text-night">10</span><span class="fw-bold fs-2 ms-1 text-night">k</span>
+                                        <p class="fw-bold text-black-50 text-night">Followers On Facebook</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="col-12 col-md-3">
+                                 <div class="text-center mt-3">
+                                    <i class="feather-zap" id="custom-icon4"></i>
+                                    <div class="mt-2">
+                                        <span class="counter-up fw-bold custom-font text-night">100</span>
+                                        <p class="fw-bold text-black-50 text-night">Finished projects</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</section>
+<section id="projects" class="container-fluid project">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row min-vh-100">
+                    <div class="col-12 mt-5">
+                       <div class="row">
+                           <div class="col-12 wow animate__lightSpeedInLeft ani-delay-1">
+                               <div class="">
+                                   <h4 class="fw-bold fs-3 text-dark">QUALITY WORK</h4>
+                                   <h4 class="fw-bold fs-3 text-dark">PRESENT DONE PROJECTS</h4>
+                               </div>
+                           </div>
+                           <div class="row mt-3 mb-4">
+                               <div class="col-4 pj wow flipInX ani-delay-2-5">
+                                   <img src="images/port1.jpeg" class="project-img mb-3 shadow">
+                               </div>
+                               <div class="col-12 col-md-4 wow flipInX  ani-delay-2-5">
+                                   <img src="images/port2.webp" class="project-img mb-3">
+                               </div>
+                               <div class="col-12 col-md-4 wow flipInX ani-delay-2-5">
+                                   <img src="images/port3.png" class="project-img mb-3">
+                               </div>
+                               <div class="col-12 col-md-4 wow flipInX ani-delay-2-6">
+                                   <img src="images/port4.jfif" class="project-img mb-3">
+                               </div>
+                               <div class="col-12 col-md-4 wow flipInX ani-delay-2-6">
+                                   <img src="images/port5.png" class="project-img mb-3">
+                               </div>
+                               <div class="col-12 col-md-4 wow flipInX ani-delay-2-6">
+                                   <img src="images/port6.jfif" class="project-img mb-3">
+                               </div>
+                               <div class="col-12 col-md-4 wow flipInX ani-delay-2-7">
+                                   <img src="images/port7.jfif" class="project-img">
+                               </div>
+                               <div class="col-12 col-md-4 wow flipInX ani-delay-2-7">
+                                   <img src="images/port8.jpg" class="project-img">
+                               </div>
+                               <div class="col-12 col-md-4 wow flipInX ani-delay-2-7">
+                                   <img src="images/port9.jfif" class="project-img">
+                               </div>
+                           </div>
+
+<!--                           <div class="row">-->
+<!--                               <div class="col-4">-->
+<!--                                   <img src="images/port1.jpeg" class="project-img">-->
+<!--                               </div>-->
+<!--                               <div class="col-4">-->
+<!--                                   <img src="images/port2.webp" class="project-img">-->
+<!--                               </div>-->
+<!--                               <div class="col-4">-->
+<!--                                   <img src="images/port3.png" class="project-img">-->
+<!--                               </div>-->
+<!--                           </div>-->
+
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="container-fluid contact last">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row min-vh-100">
+                        <div class="mt-2 mt-md-5 wow tada" style="height: 0px">
+                            <h4 class="fs-2 text-center mb-sm-3 d-none d-md-block text-night">Contact Form</h4>
+                            <p class="border-bottom border-danger d-flex m-auto" style="width: 135px"></p>
+                        </div>
+
+                       <div class="col-12 col-md-6 wow bounceInUp ani-delay-2">
+                           <div class="">
+                               <form class="row g-3">
+                                   <div class="col-md-6">
+                                       <label for="inputEmail4" class="form-label text-night">First Name</label>
+                                       <input type="email" class="form-control" id="inputEmail4">
+                                   </div>
+                                   <div class="col-md-6">
+                                       <label for="inputPassword4" class="form-label text-night">Last Name</label>
+                                       <input type="password" class="form-control" id="inputPassword4">
+                                   </div>
+                                   <div class="col-12">
+                                       <label for="inputAddress" class="form-label text-night">Email Address</label>
+                                       <input type="email" class="form-control" id="inputAddress">
+                                   </div>
+                                   <div class="col-12">
+                                       <label for="inputAddress2" class="form-label"></label>
+                                       <input type="text" class="form-control" id="inputAddress2" placeholder="Subject of the message">
+                                   </div>
+                                   <div class="col-12 mt-4">
+                                       <textarea cols="5" rows="6" class="form-control"  placeholder="Type your message here"></textarea>
+                                   </div>
+                                   <div>
+                                       <button class="btn btn-outline-primary contact-button mb-4 mb-md-0 form-control-sm rounded-3 text-dark text-night">Send Message</button>
+                                   </div>
+                               </form>
+                           </div>
+                       </div>
+                       <div class="col-12 col-md-6 wow bounceInDown ani-delay-2">
+                           <div class="">
+                               <div>
+                                   <h4 class="text-night">Yangon</h4>
+
+                                   <p class="fw-bold fs-6 text-black mb-0 mt-3 text-night">Address</p>
+                                   <small class="m-0 text-black-50 text-night">No.22, ThitSar St ,Kyankinsu ,Mingalardon Township ,Yangon </small>
+
+                                   <p class="fw-bold fs-6 text-black mb-0 mt-2 text-night">Phone</p>
+                                   <small class="m-0 text-black-50 text-night">+959 776517553</small>
+
+                                   <p class="fw-bold fs-6 text-black mb-0 mt-2 text-night">Email</p>
+                                   <small class="m-0 text-black-50 text-night">shinthantequi@gmail.com</small>
+                               </div>
+
+                               <div class="mt-4">
+                                   <h4 class="text-night">London</h4>
+
+                                   <p class="fw-bold fs-6 text-black mb-0 mt-3 text-night">Address</p>
+                                   <small class="m-0 text-black-50 text-night">No.22, ThitSar St ,Kyankinsu ,Mingalardon Township ,Yangon </small>
+
+                                   <p class="fw-bold fs-6 text-black mb-0 mt-2 text-night">Phone</p>
+                                   <small class="m-0 text-black-50 text-night">+959 776517553</small>
+
+                                   <p class="fw-bold fs-6 text-black mb-0 mt-2 text-night">Email</p>
+                                   <small class="m-0 text-black-50 text-night">shinthantequi@gmail.com</small>
+                               </div>
+                           </div>
+                       </div>
+                </div>
+                <div class="row" style="height: 300px">
+                    <div class="col-3 wow animate__fadeInTopLeft ani-delay-1">
+                        <div>
+                            <p class="text-black bottom-hover text-night">Services</p>
+                            <p class="text-black-50 bottom-hover text-night">203 Fake St. Mountain View,</p>
+                            <p class="text-black-50 bottom-hover text-night">San Francisco, California, USA</p>
+                        </div>
+                    </div>
+                    <div class="col-3 wow animate__fadeInTopLeft ani-delay-2">
+                        <div>
+                            <p class="text-black bottom-hover text-night">Services</p>
+                            <p class="text-black-50 bottom-hover text-night">Content Making</p>
+                            <p class="text-black-50 bottom-hover text-night">Brand & Logo</p>
+                            <p class="text-black-50 bottom-hover text-night">Social Advertising</p>
+                        </div>
+                    </div>
+                    <div class="col-3 wow animate__fadeInTopLeft ani-delay-2-5">
+                        <div>
+                            <p class="text-black bottom-hover text-night">Resources</p>
+                            <p class="text-black-50 bottom-hover text-night">Social Making</p>
+                            <p class="text-black-50 bottom-hover text-night">Web Design</p>
+                            <p class="text-black-50 bottom-hover text-night">Web Development</p>
+                        </div>
+                    </div>
+                    <div class="col-3 wow animate__fadeInTopLeft ani-delay-3">
+                        <div>
+                            <p class="text-black bottom-hover text-night">Templates</p>
+                            <p class="text-black-50 bottom-hover text-night">Illustration</p>
+                            <p class="text-black-50 bottom-hover text-night">Photoshop</p>
+                            <p class="text-black-50 bottom-hover text-night">AdobeXD</p>
+                        </div>
+                    </div>
+                    <div class="col-12 wow ani-delay-2 animate__heartBeat">
+                        <p class="text-white text-center last-text text-night">Copyright © 2022 All rights reserved | This template is made with  by Shinn Thant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<script src="js/app.js"></script>
+<script src="js/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="node_modules/chart.js/dist/chart.js"></script>
+<script src="vendor/counter_up/counter_up.js"></script>
+<script src="vendor/way_point/jquery.waypoints.js"></script>
+<script src="vendor/WOW-master/dist/wow.min.js"></script>
+<script>
+    new WOW().init();
+    function change(){
+          document.body.classList.toggle("night-mode");
+          document.getElementById("sun-icon").classList.toggle("fa-sun");
+    };
+    $(window).on("load",function (){
+        $(".loader-screen").fadeOut(500,function (){
+            $(this).remove()
+        })
+    })
+    $(document).ready(function (){
+        let screenHeight=$(window).height();
+        $(window).scroll(function (){
+            let currentScroll=$(this).scrollTop();
+           if(currentScroll>screenHeight-90){
+               $(".site-nav").addClass("site-nav-scroll")
+           }else {
+               $(".site-nav").removeClass("site-nav-scroll");
+               setActive("home")
+           }
+        });
+    });
+    function setActive(current){
+        $(".nav-link").removeClass("active");
+        $(`.nav-link[href="#${current}"]`).addClass("active")
+    };
+    function navScroll(){
+      let currentSection=$("section[id]");
+      currentSection.waypoint(function (direction){
+          if(direction == "down"){
+              let currentSectionId=$(this.element).attr('id');
+              setActive(currentSectionId)
+          }
+      },{offsets:'150px'});
+
+        currentSection.waypoint(function (direction){
+            if(direction == "up"){
+                let currentSectionId=$(this.element).attr('id');
+                setActive(currentSectionId)
+            }
+        },{offsets:'150px'});
+    };
+    navScroll();
+
+    $('.counter-up').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
+   let myChart1=document.getElementById("myChart");
+
+   let orderFromPlace = [20,25,30,10];
+   let places = ["AdobeXD","AdobeAi","AdobePhotoshop","AfterEffect"];
+
+   let op = document.getElementById('op').getContext('2d');
+   let opChart = new Chart(op, {
+       type: 'doughnut',
+       data: {
+           labels:['AdobePhotoshop',
+               'AdobeAi',
+               'AdobeXD'],
+           datasets: [{
+               label: '# of Votes',
+               data:[80, 70, 90],
+               backgroundColor: [
+                   'rgb(255, 99, 132)',
+                   'rgb(54, 162, 235)',
+                   'rgb(255, 205, 86)'
+               ],
+               hoverOffset: 4
+           }]
+       },
+       // options: {
+       //     scales: {
+       //         yAxes: [{
+       //             display:false,
+       //             ticks: {
+       //                 beginAtZero: true
+       //             }
+       //         }],
+       //         xAxes: [
+       //             {
+       //                 display:false
+       //             }
+       //         ]
+       //     },
+       //     legend:{
+       //         display: false,
+       //         position: 'bottom',
+       //         labels: {
+       //             fontColor: '#333',
+       //             usePointStyle:true
+       //         }
+       //     }
+       // }
+   });
+</script>
+</body>
+</html>

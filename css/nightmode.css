@@ -1,0 +1,32 @@
+:root{
+    --white: #faf9f9;
+    --white2:#bfcde0;
+    --blue:#00d8d8;
+    --dark:#343a40;
+    --dark2:#495057;
+    --dark3:#adb5bd;
+}
+body.night-mode{
+    background-color: var(--dark);
+}
+.night-mode .side-icon{
+    color: var(--white)!important;
+}
+.night-mode .text-night{
+    color: var(--white) !important;
+}
+.night-mode .dynamic-text li span::after{
+    background-color: var(--dark);
+}
+.night-mode #about{
+    background-color: var(--dark2);
+}
+.night-mode .bg-night{
+    background-color: var(--white2);
+}
+.night-mode .bg-night:hover{
+    background-color: var(--blue);
+}
+.night-mode .project{
+    background-color: var(--white2);
+}
